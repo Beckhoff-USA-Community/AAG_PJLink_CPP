@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.56">
+	<Project ProjectGUID="{0D35E2A3-57D3-4247-AD64-30299C75EA14}" TargetNetId="169.254.250.244.1.1" Target64Bit="true" ShowHideConfigurations="#x6">
+		<System>
+			<Settings MaxCpus="8" NonWinCpus="4">
+				<Debugger Priority="61"/>
+			</Settings>
+			<Tasks>
+				<Task Id="2" Priority="1" CycleTime="100000" AmsPort="350" AdtTasks="true">
+					<Name>CPP Task</Name>
+				</Task>
+			</Tasks>
+		</System>
+		<Cpp>
+			<Project File="PJ_Link.xti"/>
+		</Cpp>
+		<Io>
+			<Device File="Device 1 (RT-Ethernet Adapter).xti" Id="1"/>
+		</Io>
+	</Project>
+</TcSmProject>
